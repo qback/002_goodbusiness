@@ -1,5 +1,18 @@
 // Sass mixins
 
+//px to em
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
 //breakpoint mixins
 
 @mixin tiny {
