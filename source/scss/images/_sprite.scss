@@ -1,0 +1,45 @@
+@mixin sprite($left, $top, $height, $width) {
+  background-image: url(sprite.png);
+  background-repeat: no-repeat;
+  background-position: $left $top;
+  height: $height;
+  width: $width;
+}
+
+.ico_testimonyals_woman {
+  @include sprite(-0px, -0px, 69px, 67px)
+}
+
+.ico_testimonyals_woman_color {
+  @include sprite(-67px, -0px, 69px, 67px)
+}
+
+.ico_testimonials_men_color {
+  @include sprite(-134px, -0px, 68px, 67px)
+}
+
+.ico_testymonials_men {
+  @include sprite(-0px, -69px, 68px, 67px)
+}
+
+.ico_contact_smartphone {
+  @include sprite(-67px, -69px, 37px, 34px)
+}
+
+.ico_contact_phone {
+  @include sprite(-101px, -69px, 35px, 29px)
+}
+
+.ico_contact_mail {
+  @include sprite(-130px, -69px, 25px, 34px)
+}
+
+.ico_portfolio-eye {
+  @include sprite(-164px, -69px, 23px, 35px)
+}
+
+.ico_search {
+  @include sprite(-67px, -106px, 20px, 21px)
+}
+
+

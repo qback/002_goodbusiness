@@ -3,6 +3,10 @@
 @import 'helpers/_variables';
 @import 'helpers/_mixins';
 
+//images
+
+@import 'images/_datauri';
+
 // base
 @import 'base/_normalize';
 @import 'base/_base';
