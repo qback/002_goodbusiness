@@ -1,0 +1,32 @@
+{
+  "name": "mysite",
+  "version": "0.0.1",
+  "description": "NiklerGroup_002",
+  "main": "build/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oleg",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.7.10",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-deporder": "^1.1.0",
+    "gulp-htmlclean": "^2.6.4",
+    "gulp-imacss": "^0.3.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.11.0",
+    "gulp-newer": "^0.5.1",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-preprocess": "^1.2.0",
+    "gulp-sass": "^2.0.1",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}
