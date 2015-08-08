@@ -7,3 +7,12 @@
 //     font-weight: normal;
 //     font-style: normal;
 // }
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('fonts/bebasneue_regular.eot');
+    src: url('fonts/bebasneue_regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue_regular.woff') format('woff'),
+         url('fonts/bebasneue_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

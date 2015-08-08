@@ -159,9 +159,9 @@ gulp.task('sass', ['imguri'], function() {
     // .pipe(sourcemaps.init())
     .pipe(sass(css.sassOpts))
     //добавляем путь к картинкам в css
-    .pipe(urlAdjuster({
-      prependRelative: css.imagePath,
-    }))
+    // .pipe(urlAdjuster({
+    //   prependRelative: css.imagePath,
+    // }))
     .pipe(size({
       title: 'CSS on'
     }))

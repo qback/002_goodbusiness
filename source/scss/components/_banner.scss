@@ -1,0 +1,113 @@
+/*=====================================
+=            Banner Styles            =
+=====================================*/
+
+.slider {
+  font-size: inherit;
+  position: relative;
+  overflow: hidden;
+  width: em(1280);
+  height: em(490);
+  background-image: url('../images/banner.jpg');
+}
+
+.slider__wrapper {
+  position: relative;
+  width: 100%;
+  height: em(300);
+}
+
+.slider__slide {
+  position: absolute;
+  width: em(1280);
+  height: 100%;
+  /* Все слайды скрыты */
+  transition: opacity 500ms linear;
+  opacity: 0;
+}
+
+.slider__slide:first-child {
+  opacity: 1;
+}
+
+.slider__text {
+  max-width: em(640);
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: em(40);
+  text-align: center;
+  color: $bannertext-grey;
+}
+
+.slider__title {
+  font-family: $bebas-regular;
+  font-size: em(60);
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+  margin-bottom: em(20, 60);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slider__subhead {
+  font-family: $ubuntu-regular;
+  font-size: em(14);
+  line-height: 1;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider__nav {
+  position: absolute;
+  right: em(182);
+  bottom: em(28);
+  height: em(16);
+  margin: em(16) 0;
+  text-align: center;
+}
+
+a[data-class='slider__link'] {
+  font-size: 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+  background-color: $banner-grey;
+}
+
+a[data-class='slider__link'].current {
+  background-color: $services-blue;
+  box-shadow: inset 0 0 0 4px $button-orange;
+}
+
+.slider__button {
+  font-family: $ubuntu-condensed;
+  font-size: em(25);
+  line-height: 2.04;
+  position: absolute;
+  bottom: em(185, 25);
+  left: em(519, 25);
+  width: em(243, 25);
+  height: em(51, 25);
+  transition: background-color .3s;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffebca;
+  border-radius: em(3, 25);
+  background-color: $button-orange;
+  &:hover {
+    background-color: saturate($button-orange, 50%);
+  }
+  &:active {
+    bottom: em(183, 25);
+  }
+}
+
+
+/*-----  End of Banner Styles  ------*/

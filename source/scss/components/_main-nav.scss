@@ -1,58 +1,61 @@
 .main-nav {
-  font-size: em(14);
   font-family: $ubuntu-regular;
+  font-size: em(14);
 }
+
 .main-nav__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
+
 .main-nav__item {
-  float:left;
+  float: left;
   min-height: em(80, 14);
-  text-align: center;
   margin-right: em(12, 14);
+  text-align: center;
 }
+
 .main-nav__item--active {
   position: relative;
   box-sizing: border-box;
-  background: $nav-blue;
   color: $nav-lightblue;
-  border-bottom: em(12, 14) solid  $nav-deepblue;
+  border-bottom: em(12, 14) solid $nav-deepblue;
+  background: $nav-blue;
   & .main-nav__link {
-    color: inherit;
     cursor: default;
+    color: inherit;
     &:hover {
       color: inherit;
       background-color: transparent;
     }
   }
 }
+
 .main-nav__item--active:after {
-  content: "";
-  @include scut-center-transform(x);
   bottom: 0;
   display: inline-block;
-  height: 0;
   width: 0;
-  border-width: em(5,14) em(4, 14);
+  height: 0;
+  content: '';
+  border-width: em(5, 14) em(4, 14);
   border-style: solid;
   border-color: transparent;
-  border-bottom-color: inherit;
   border-top-width: 0;
-  
-
+  border-bottom-color: inherit;
+  @include scut-center-transform(x);
 }
+
 .main-nav__link {
+  line-height: em(25, 14);
   display: inline-block;
+  margin-top: em(30, 14);
   padding: 0 em(19, 14);
+  transition: all .3s;
   color: $nav-darkgrey;
   border-radius: em(3, 14);
-  line-height: em(25, 14);
-  margin-top: em(30, 14);
-  transition: all 0.3s;
   &:hover {
+    color: $white;
     background: $button-orange;
-    color:$white;
   }
 }
