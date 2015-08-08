@@ -1,0 +1,27 @@
+.search {
+  font-size: em(13);
+  font-family: $ubuntu-regular;
+}
+
+input.search__input {
+  background-color: $button-orange;
+  @include sprite(-76px, -110px, 36px, 36px);
+  padding: em(9, 13) em(10, 13) em(9, 13) em(36, 13);
+  border-radius: 10em;
+  transition: all .5s;
+  width: em(36, 13);
+  padding-left: em(10, 13);
+  color: transparent;
+  cursor: pointer;
+  border: 0;
+  box-sizing: border-box;
+  height: em(36, 13); 
+}
+input.search__input:focus {
+  width: em(150, 13);
+  padding-left: em(36,13);
+  color: #fff;
+  cursor: auto;
+  outline: 0;
+}
+

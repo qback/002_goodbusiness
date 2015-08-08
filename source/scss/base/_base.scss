@@ -2,4 +2,14 @@
 .wrapper {
   width: em(920);
 }
-
+// * {
+//   margin:0;
+//   padding: 0;
+// }
+body {
+  width: em(1280);
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}

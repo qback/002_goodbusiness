@@ -1,0 +1,15 @@
+.brand {
+  font-family: $bree-serif-regular;
+  font-size: em(20);
+  line-height: em(80, 20);
+  width: em(150, 20);
+  height: em(80, 20);
+  padding-left: em(6, 20);
+  letter-spacing: em(-1, 80);
+  color: $navlogo-grey;
+}
+
+.brand__img {
+  margin-right: em(4, 20);
+  vertical-align: middle;
+}

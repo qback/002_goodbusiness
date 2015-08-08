@@ -1,0 +1,29 @@
+.main-header {
+  min-height: em(80);
+  background: $white;
+  position: relative;
+}
+//для вывавнивания элементов в header
+.main-header:before { 
+  content: "";
+  display: inline-block;
+  min-height: inherit;
+  height: 100%;
+  vertical-align: middle;
+}
+.main-header__logo {
+  float: left;
+  margin-left: em(180, 20);
+}
+
+.main-header__nav {
+  margin-left: em(180);
+  float: left;
+}
+
+.main-header__form {
+  margin-left: em(92);
+  display: inline-block;
+  vertical-align: middle;
+}
+

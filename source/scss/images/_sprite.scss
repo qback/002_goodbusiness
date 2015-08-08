@@ -42,4 +42,36 @@
   @include sprite(-67px, -106px, 20px, 21px)
 }
 
+// @mixin spritebox($left, $top, $height, $width)
+//   background-image: url(spritebox-sprite.png)
+//   background-repeat: no-repeat
+//   background-position: $left $top
+//   height: $height
+//   width: $width
 
+// .ico_testimonyals_woman 
+//   @include spritebox(-0px, -0px, 69px, 67px)
+
+// .ico_testimonyals_woman_color 
+//   @include spritebox(-67px, -0px, 69px, 67px)
+
+// .ico_testimonials_men_color 
+//   @include spritebox(-134px, -0px, 68px, 67px)
+
+// .ico_testymonials_men 
+//   @include spritebox(-0px, -69px, 68px, 67px)
+
+// .ico_contact_smartphone 
+//   @include spritebox(-67px, -69px, 37px, 34px)
+
+// .ico_contact_phone 
+//   @include spritebox(-101px, -69px, 35px, 29px)
+
+// .ico_contact_mail 
+//   @include spritebox(-130px, -69px, 25px, 34px)
+
+// .ico_portfolio-eye 
+//   @include spritebox(-164px, -69px, 23px, 35px)
+
+// .ico_search 
+//   @include spritebox(-83px, -118px, 20px, 21px)

@@ -6,9 +6,17 @@
 //images
 
 @import 'images/_datauri';
+@import 'images/_sprite';
 
 // base
 @import 'base/_normalize';
+@import 'base/_webfonts';
 @import 'base/_base';
+
+//components
+@import 'components/_header.scss';
+@import 'components/_brand.scss';
+@import 'components/_main-nav.scss';
+@import 'components/_search.scss';
 
 

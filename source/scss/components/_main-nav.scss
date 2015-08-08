@@ -1,0 +1,58 @@
+.main-nav {
+  font-size: em(14);
+  font-family: $ubuntu-regular;
+}
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__item {
+  float:left;
+  min-height: em(80, 14);
+  text-align: center;
+  margin-right: em(12, 14);
+}
+.main-nav__item--active {
+  position: relative;
+  box-sizing: border-box;
+  background: $nav-blue;
+  color: $nav-lightblue;
+  border-bottom: em(12, 14) solid  $nav-deepblue;
+  & .main-nav__link {
+    color: inherit;
+    cursor: default;
+    &:hover {
+      color: inherit;
+      background-color: transparent;
+    }
+  }
+}
+.main-nav__item--active:after {
+  content: "";
+  @include scut-center-transform(x);
+  bottom: 0;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-width: em(5,14) em(4, 14);
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: inherit;
+  border-top-width: 0;
+  
+
+}
+.main-nav__link {
+  display: inline-block;
+  padding: 0 em(19, 14);
+  color: $nav-darkgrey;
+  border-radius: em(3, 14);
+  line-height: em(25, 14);
+  margin-top: em(30, 14);
+  transition: all 0.3s;
+  &:hover {
+    background: $button-orange;
+    color:$white;
+  }
+}
