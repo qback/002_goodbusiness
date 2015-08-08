@@ -1,0 +1,120 @@
+.portfolio {
+  padding: em(50) 0 em(78);
+  color: $portfolio-grey;
+  background: $bg-darkblue;
+}
+
+.portfolio__header {
+  height: em(32);
+}
+
+.portfolio__title {
+  font-family: $bree-serif-regular;
+  font-size: em(30);
+  line-height: percentage(32/30);
+  float: left;
+  margin: 0;
+  color: $title-orange;
+}
+
+.portfolio__link {
+  font-family: $ubuntu-condensed;
+  font-size: em(16);
+  line-height: percentage(32/16);
+  position: relative;
+  float: right;
+  width: em(90, 16);
+  height: 100%;
+  transition: all .3s;
+  text-align: center;
+  color: white;
+  border-radius: em(3, 16);
+  background: $portfoliobutton-blue;
+  &:hover {
+    background: darken($portfoliobutton-blue, 20%);
+  }
+  &:active {
+    top: 2px;
+  }
+}
+
+.portfolio__body {
+  margin-top: em(65);
+  @include scut-clearfix;
+}
+
+.portfolio__item {
+  float: left;
+  width: percentage(282/920);
+  margin-right: em(37);
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.case__figure {
+  margin: 0;
+  padding: 0;
+}
+
+.figure {
+  border: em(9) solid white;
+  box-sizing: border-box;
+  position: relative;
+  max-width: em(282);
+  max-height: em(220);
+  display: block;
+  overflow:hidden;
+  transition: all 0.35s;
+}
+.figure:hover {
+  border: em(9) solid $bg-grey;
+  opacity: 0.7;
+}
+.figure__img {
+  width: 100%;
+  opacity:0.7;
+  transform: scale(1.15);
+  transition: opacity 0.35s, transform 0.35s;
+}
+.figure:hover img {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+.figure__caption {
+  position: absolute;
+  top: 50%;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  width: em(142);
+  height: em(40);
+  border: 1px solid white;
+  border-radius: em(5);
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+}
+.figure:hover .figure__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.figure__link {
+  display: block;
+  color: white;
+  padding-left: em(60, 17);
+  line-height: em(40, 17);
+  position: relative;
+  font-size: em(17);
+  font-family: $bree-serif-regular;
+}
+.figure__link:before {
+  content: "";
+  position: absolute;
+  left: em(12);
+  top: em(9);
+  width: em(35);
+  height: em(23);
+  @include sprite(-164px, -69px, 23px, 35px);
+}

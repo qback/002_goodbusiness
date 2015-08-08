@@ -5,6 +5,7 @@
 .services {
   position: relative;
   background: $bg-grey;
+  padding: percentage(50/1280) 0 percentage(36/1280);
 }
 
 .services__title {
@@ -27,15 +28,14 @@
   font-size: em(11);
   display: inline-block;
   box-sizing: border-box;
-  width: percentage(170/920);
-  margin-right: percentage(75/920);
-  padding: 116px percentage(5/920) em(36, 11);
+  width: percentage(175/920);
+  margin-right: percentage(68/920);
+  padding: 116px percentage(5/920) 0;
   text-align: center;
   vertical-align: top;
   color: $featuretext-grey;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  margin-top: percentage(50/920);
   &:last-child {
     margin-right: 0;
   }
