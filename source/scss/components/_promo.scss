@@ -1,0 +1,65 @@
+/*===============================================
+=            Services section styles            =
+===============================================*/
+
+.services {
+  position: relative;
+  background: $bg-grey;
+}
+
+.services__title {
+  font-family: $bebas-regular;
+  font-size: em(22);
+  font-weight: normal;
+  line-height: em(35, 22);
+  width: em(146, 22);
+  height: em(35, 22);
+  text-align: center;
+  color: white;
+  border-radius: em(3, 22);
+  background: $services-blue;
+  @include scut-center-transform(x);
+  top: em(-17, 22);
+  margin: 0;
+}
+
+.service {
+  font-size: em(11);
+  display: inline-block;
+  box-sizing: border-box;
+  width: percentage(170/920);
+  margin-right: percentage(75/920);
+  padding: 116px percentage(5/920) em(36, 11);
+  text-align: center;
+  vertical-align: top;
+  color: $featuretext-grey;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  margin-top: percentage(50/920);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.service__title {
+  font-family: $bree-serif-regular;
+  font-size: em(17, 11);
+  margin-bottom: em(4,11);
+}
+
+.service__text {
+  max-width: em(140, 11);
+  margin: 0 auto;
+  line-height: percentage(15/11);
+}
+.service__link {
+  font-family: $ubuntu-regular;
+  font-weight: bold;
+  color: $featurelink-blue;
+}
+
+/*-----  End of Services section styles  ------*/
+
+
+
+

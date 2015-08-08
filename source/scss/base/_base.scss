@@ -1,6 +1,8 @@
 /* Basic  Styles*/
 .wrapper {
   width: em(920);
+  margin: 0 auto;
+  @include scut-clearfix;
 }
 // * {
 //   margin:0;
