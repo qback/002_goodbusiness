@@ -1,0 +1,15 @@
+/*==========  Twitter block  ==========*/
+.twitter {
+  width: em(219);
+  font-size: inherit;
+  text-align: left;
+}
+.post {
+  @extend %single-post;
+}
+.post__link, .post__text, .post__time  {
+  @extend %single-line;
+  }
+.post__time {
+  display: block;
+}

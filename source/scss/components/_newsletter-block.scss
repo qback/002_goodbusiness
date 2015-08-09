@@ -1,0 +1,7 @@
+.newsletter {
+  width: em(245);
+}
+.newsletter__last {
+  @extend %single-line;
+  @extend %single-post;
+} 

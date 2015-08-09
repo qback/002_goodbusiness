@@ -1,0 +1,22 @@
+/*==========  Projects-block styles  ==========*/
+
+.projects {
+  width: em(214);
+}
+.project {
+  @include scut-clearfix;
+}
+.project__body {
+  width: em(144);
+  float: right;
+  @extend %single-post;
+}
+.project__img {
+  float: left;
+  margin: em(12) 0 em(10);
+}
+
+.project__text, .project__link, .project__time {
+  @extend %single-line;
+}
+

@@ -1,0 +1,18 @@
+/*==========================================
+=            Main Footer Styles            =
+==========================================*/
+.main-footer{
+  padding: percentage(43/1280) 0 percentage(34/1280);
+  background: $bg-darkblue;
+}
+.main-footer__block {
+  font-family: $ubuntu-regular;
+  display: inline-block;
+  color: $footer-grey;
+  vertical-align: top;
+}
+//общие стили блоков футера
+
+.twitter__title, .newsletter__title, .projects__title, .contact__title {
+  @extend %main-footer__blocktitle;
+}

@@ -1,9 +1,11 @@
 /* Basic  Styles*/
+
 .wrapper {
   width: em(920);
   margin: 0 auto;
   @include scut-clearfix;
 }
+
 // * {
 //   margin:0;
 //   padding: 0;
@@ -12,6 +14,32 @@ body {
   width: em(1280);
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
+  color: $link-blue;
+}
+
+//для заголовков футера
+%main-footer__blocktitle {
+  font-family: $bebas-regular;
+  font-size: em(30);
+  line-height: percentage(26/30);
+  margin-top: 0;
+  margin-bottom: em(7, 30);
+  text-align: left;
+  color: $title-orange;
+}
+%single-post {
+   padding: em(10) 0 em(10);
+  border-bottom: 1px solid $footerline-grey;
+}
+
+//для блоков футера (для строчки в посте)
+%single-line {
+  font-size: em(12);
+  line-height: percentage(20/12);
+  display: block;
+  margin-top: 0;
+  margin-bottom: em(1, 12);
 }
