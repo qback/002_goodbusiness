@@ -17,7 +17,7 @@ input.search__input {
   border: 0;
   border-radius: 10em;
   background-color: $button-orange;
-  @include sprite(-76px, -110px, 36px, 36px);
+  @include sprite(-72px, -118px);
   &:hover {
     cursor: pointer;
     cursor: hand;

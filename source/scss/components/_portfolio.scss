@@ -127,7 +127,7 @@
   width: em(35);
   height: em(23);
   content: '';
-  @include sprite(-164px, -69px, 23px, 35px);
+  @include sprite(-160px, -81px);
 }
 
 .case__title {
