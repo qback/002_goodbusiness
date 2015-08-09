@@ -1,11 +1,11 @@
 /*===============================================
-=            Services section styles            =
+=            Promo Services section styles            =
 ===============================================*/
 
 .services {
   position: relative;
   background: $bg-grey;
-  padding: percentage(50/1280) 0 percentage(36/1280);
+  padding: percentage(50/1280) 0 percentage(34/1280);
 }
 
 .services__title {
@@ -25,7 +25,7 @@
 }
 
 .service {
-  font-size: em(11);
+  
   display: inline-block;
   box-sizing: border-box;
   width: percentage(175/920);
@@ -43,14 +43,16 @@
 
 .service__title {
   font-family: $bree-serif-regular;
-  font-size: em(17, 11);
-  margin-bottom: em(4,11);
+  font-size: em(17);
+  margin-bottom: em(4,17);
+  font-weight: normal;
 }
 
 .service__text {
+  font-size: em(11);
   max-width: em(140, 11);
   margin: 0 auto;
-  line-height: percentage(15/11);
+  line-height: percentage(16/11);
 }
 .service__link {
   font-family: $ubuntu-regular;
@@ -58,7 +60,7 @@
   color: $featurelink-blue;
 }
 
-/*-----  End of Services section styles  ------*/
+/*-----  End of Promo Services section styles  ------*/
 
 
 

@@ -1,3 +1,7 @@
+
+/*================================================
+=            Portfolio section styles            =
+================================================*/
 .portfolio {
   padding: em(50) 0 em(78);
   color: $portfolio-grey;
@@ -11,6 +15,7 @@
 .portfolio__title {
   font-family: $bree-serif-regular;
   font-size: em(30);
+  font-weight: normal;
   line-height: percentage(32/30);
   float: left;
   margin: 0;
@@ -58,63 +63,89 @@
 }
 
 .figure {
-  border: em(9) solid white;
-  box-sizing: border-box;
   position: relative;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
   max-width: em(282);
   max-height: em(220);
-  display: block;
-  overflow:hidden;
-  transition: all 0.35s;
+  transition: all .35s;
+  border: em(9) solid white;
 }
+
 .figure:hover {
+  opacity: .7;
   border: em(9) solid $bg-grey;
-  opacity: 0.7;
 }
+
 .figure__img {
   width: 100%;
-  opacity:0.7;
+  transition: opacity .35s, transform .35s;
   transform: scale(1.15);
-  transition: opacity 0.35s, transform 0.35s;
+  opacity: .7;
 }
+
 .figure:hover img {
-  opacity: 0.5;
   transform: scale(1);
+  opacity: .5;
 }
 
 .figure__caption {
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
-  margin: auto;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
-  width: em(142);
+  width: em(140);
   height: em(40);
+  margin: auto;
+  transition: opacity .35s, transform .35s;
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0;
   border: 1px solid white;
   border-radius: em(5);
-  opacity: 0;
-  transition: opacity 0.35s, transform 0.35s;
 }
+
 .figure:hover .figure__caption {
-  opacity: 1;
   transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
 }
 
 .figure__link {
-  display: block;
-  color: white;
-  padding-left: em(60, 17);
+  font-family: $bree-serif-regular;
+  font-size: em(17);
   line-height: em(40, 17);
   position: relative;
-  font-size: em(17);
-  font-family: $bree-serif-regular;
+  display: block;
+  padding-left: em(60, 17);
+  color: white;
 }
+
 .figure__link:before {
-  content: "";
   position: absolute;
-  left: em(12);
   top: em(9);
+  left: em(12);
   width: em(35);
   height: em(23);
+  content: '';
   @include sprite(-164px, -69px, 23px, 35px);
 }
+
+.case__title {
+  font-family: $bree-serif-regular;
+  font-size: em(17);
+  font-weight: normal;
+  margin: em(16, 17) 0 em(6, 17);
+  text-align: left;
+  color: $title-orange;
+}
+
+.case__desc {
+  font-family: $ubuntu-regular;
+  font-size: em(11);
+  line-height: percentage(15/11);
+  margin: 0;
+}
+
+
+/*-----  End of Portfolio section styles  ------*/
+

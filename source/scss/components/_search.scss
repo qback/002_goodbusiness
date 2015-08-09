@@ -1,3 +1,5 @@
+/*==========  Search block style  ==========*/
+
 .search {
   font-family: $ubuntu-regular;
   font-size: em(13);
@@ -16,6 +18,10 @@ input.search__input {
   border-radius: 10em;
   background-color: $button-orange;
   @include sprite(-76px, -110px, 36px, 36px);
+  &:hover {
+    cursor: pointer;
+    cursor: hand;
+  }
 }
 
 input.search__input:focus {

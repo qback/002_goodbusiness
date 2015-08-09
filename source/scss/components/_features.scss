@@ -1,0 +1,97 @@
+/*===============================================
+=            Features section styles            =
+===============================================*/
+
+.features {
+  font-family: $ubuntu-regular;
+  padding: percentage(32/1280) 0 percentage(32/1280);
+  color: $featuretext-grey;
+  background: $bg-grey;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: percentage(1024/1280);
+    height: 1px;
+    background-color: $hr-grey;
+    @include scut-center-transform(x);
+  }
+}
+
+.features__header {
+  max-width: em(706);
+  margin-right: auto;
+  margin-bottom: em(36);
+  margin-left: auto;
+  text-align: center;
+}
+
+.features__title {
+  font-family: $bebas-regular;
+  font-size: em(40);
+  line-height: percentage(40/40);
+  margin: 0 0 em(19, 40);
+  text-transform: uppercase;
+  color: $title-blue;
+}
+
+.features__subhead {
+  font-size: em(12);
+}
+
+.features__item {
+  display: inline-block;
+  width: percentage(190/920);
+  margin-right: percentage(49/920);
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.feature {
+  box-sizing: border-box;
+}
+
+.feature__title {
+  font-family: $bree-serif-regular;
+  font-size: em(17);
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: em(4, 17);
+  color: $title-blue;
+}
+
+.feature__text {
+  font-size: em(11);
+  line-height: percentage(16/11);
+  margin: 0 auto;
+  margin-bottom: em(11, 11);
+}
+
+.feature__link {
+  font-family: $ubuntu-regular;
+  font-size: em(12);
+  line-height: percentage(24/12);
+  position: relative;
+  display: block;
+  float: right;
+  width: em(55, 12);
+  height: em(24, 12);
+  margin-right: em(5);
+  transition: all .15s;
+  text-align: center;
+  color: white;
+  border-radius: em(3, 12);
+  background: $portfoliobutton-blue;
+  &:hover {
+    outline: none;
+    box-shadow: 0 em(4, 12) 0 $borderbottom-blue;
+  }
+  &:active {
+    top: 2px;
+  }
+}
+
+
+/*-----  End of Features section styles  ------*/
