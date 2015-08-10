@@ -30,13 +30,15 @@ button {
 }
 
 //center wrapper
-
 html {
-  background: url(http://s5o.ru/source/_desktop/assets/images/design/core/body-gray-background.png);
+  background:  rgba(0,0,0,.2);
 }
+
 body {
   width: em(1280);
   margin: 0 auto;
+  border-left: 1px solid rgba(0,0,0,.2);
+  border-right: 1px solid rgba(0,0,0,.2);
 }
 .wrapper {
   width: em(920);
