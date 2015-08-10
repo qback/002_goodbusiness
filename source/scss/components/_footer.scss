@@ -16,6 +16,6 @@
 }
 
 //общие стили блоков футера
-.twitter__title, .newsletter__title, .projects__title, .contact__title {
+.feed__title, .newsletter__title, .projects__title, .contact__title {
   @extend %main-footer__blocktitle;
 }
