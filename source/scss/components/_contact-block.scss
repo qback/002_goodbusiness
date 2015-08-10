@@ -1,4 +1,46 @@
-/*==========  COntact-block styles  ==========*/
+/*==========  Contact-block styles  ==========*/
+
 .contact {
   width: em(150);
+}
+
+.connection {
+  margin: em(20) 0 em(20);
+  @include scut-clearfix;
+  
+}
+
+
+.connection--phone:before {
+  display: inline-block;
+  width: em(29);
+  height: em(35);
+  content: '';
+  @include sprite(-201px, -81px);
+}
+
+.connection--mobile:before {
+  display: inline-block;
+  width: em(34);
+  height: em(37);
+  content: '';
+  @include sprite(-79px, -81px);
+}
+
+.connection--mail:before {
+  display: inline-block;
+  width: em(34);
+  height: em(30);
+  content: '';
+  @include sprite(-118px, -76px);
+}
+
+.connection__body {
+  float: right;
+  ;
+}
+
+.connection__item {
+  font-size: em(13);
+  margin: em(2, 13) 0 0;
 }

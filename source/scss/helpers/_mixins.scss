@@ -1,40 +1,18 @@
 // Sass mixins
-
 //px to em
 @function em($pixels, $context: $browser-context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }
-
   @if (unitless($context)) {
     $context: $context * 1px;
   }
-
   @return $pixels / $context * 1em;
 }
 
-//breakpoint mixins
-
-@mixin tiny {
-  @media (max-width: #{$phone-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin phone {
-  @media (max-width: #{$tablet-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
+//sprite mixin
+@mixin sprite($left, $top) {
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: $left $top;
 }

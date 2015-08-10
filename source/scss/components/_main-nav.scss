@@ -1,4 +1,4 @@
-/*==========  Main navigation block style  ==========*/
+/*==========  MainNavigation-block styles  ==========*/
 
 .main-nav {
   font-family: $ubuntu-regular;
@@ -57,7 +57,7 @@
   color: $nav-darkgrey;
   border-radius: em(3, 14);
   &:hover {
-    color: $white;
+    color: white;
     background: $button-orange;
   }
 }

@@ -1,4 +1,4 @@
-/*==========  Search block style  ==========*/
+/*==========  Search-block styles  ==========*/
 
 .search {
   font-family: $ubuntu-regular;
@@ -15,12 +15,11 @@ input.search__input {
   transition: all .5s;
   color: transparent;
   border: 0;
-  border-radius: 10em;
+  border-radius: em(130, 13);
   background-color: $button-orange;
   @include sprite(-72px, -118px);
   &:hover {
     cursor: pointer;
-    cursor: hand;
   }
 }
 
@@ -28,6 +27,6 @@ input.search__input:focus {
   width: em(150, 13);
   padding-left: em(36, 13);
   cursor: auto;
-  color: #fff;
+  color: white;
   outline: 0;
 }

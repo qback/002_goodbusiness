@@ -3,20 +3,25 @@
 .projects {
   width: em(214);
 }
+
 .project {
   @include scut-clearfix;
-}
-.project__body {
-  width: em(144);
-  float: right;
   @extend %single-post;
+  &:last-child {
+    border: none;
+  }
 }
+
+.project__body {
+  float: right;
+  width: em(144);
+}
+
 .project__img {
   float: left;
-  margin: em(12) 0 em(10);
+  margin-top: em(4);
 }
 
 .project__text, .project__link, .project__time {
   @extend %single-line;
 }
-

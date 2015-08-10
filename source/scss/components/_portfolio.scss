@@ -1,7 +1,7 @@
-
 /*================================================
 =            Portfolio section styles            =
 ================================================*/
+
 .portfolio {
   padding: em(50) 0 em(78);
   color: $portfolio-grey;
@@ -28,15 +28,13 @@
   line-height: percentage(32/16);
   position: relative;
   float: right;
-  width: em(90, 16);
-  height: 100%;
+  padding: 0 em(10, 16);
   transition: all .3s;
-  text-align: center;
   color: white;
   border-radius: em(3, 16);
   background: $portfoliobutton-blue;
   &:hover {
-    background: darken($portfoliobutton-blue, 20%);
+    box-shadow: 0 em(5, 16) 0 lighten($buttonborder-darkblue2, 5%);
   }
   &:active {
     top: 2px;
@@ -91,10 +89,10 @@
 }
 
 .figure__caption {
-  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
+  box-sizing: border-box;
   width: em(140);
   height: em(40);
   margin: auto;
@@ -148,4 +146,3 @@
 
 
 /*-----  End of Portfolio section styles  ------*/
-

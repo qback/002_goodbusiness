@@ -1,20 +1,48 @@
 /* Basic  Styles*/
+//сброс стилей для кнопок форм
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
 
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+//center wrapper
+
+html {
+  background: url(http://s5o.ru/source/_desktop/assets/images/design/core/body-gray-background.png);
+}
+body {
+  width: em(1280);
+  margin: 0 auto;
+}
 .wrapper {
   width: em(920);
   margin: 0 auto;
   @include scut-clearfix;
 }
-
-// * {
-//   margin:0;
-//   padding: 0;
-// }
-body {
-  width: em(1280);
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   color: $link-blue;
@@ -26,12 +54,13 @@ a {
   font-size: em(30);
   line-height: percentage(26/30);
   margin-top: 0;
-  margin-bottom: em(7, 30);
+  margin-bottom: em(8, 30);
   text-align: left;
   color: $title-orange;
 }
+//для блоков футера (подчеркивание на ширину блока)
 %single-post {
-   padding: em(10) 0 em(10);
+  padding: em(10) 0 em(10);
   border-bottom: 1px solid $footerline-grey;
 }
 

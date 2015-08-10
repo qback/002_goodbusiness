@@ -4,16 +4,16 @@
 
 .features {
   font-family: $ubuntu-regular;
+  position: relative;
   padding: percentage(32/1280) 0 percentage(32/1280);
   color: $featuretext-grey;
   background: $bg-grey;
-  position: relative;
   &:after {
-    content: "";
     position: absolute;
     bottom: 0;
     width: percentage(1024/1280);
     height: 1px;
+    content: '';
     background-color: $hr-grey;
     @include scut-center-transform(x);
   }
@@ -76,9 +76,8 @@
   position: relative;
   display: block;
   float: right;
-  width: em(55, 12);
-  height: em(24, 12);
   margin-right: em(5);
+  padding: 0 em(8, 12);
   transition: all .15s;
   text-align: center;
   color: white;

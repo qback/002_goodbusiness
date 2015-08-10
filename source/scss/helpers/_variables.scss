@@ -1,7 +1,6 @@
 $browser-context: 16; // Default
 
-//colors
-$white: #fff;      
+//bg-colors
 
 $nav-blue: #12a3d6;
 $nav-deepblue: #0080b7;
@@ -15,7 +14,11 @@ $portfoliobutton-blue: $services-blue;
 $borderbottom-blue: #025568;
 $hr-grey: #d9d9d9;
 $line-grey: #c1c1c1;
-//text
+$buttonborder-darkblue: #025568;
+$buttonborder-darkblue2: #0e2033;
+
+//text-color
+
 $navlogo-grey: #606060;
 $nav-darkgrey: #515862;
 $nav-lightblue: #c5f4ff;
@@ -25,11 +28,13 @@ $featuretext-grey: #515862;
 $featurelink-blue: #3e9dd1;
 $title-orange: $button-orange;
 $portfolio-grey: #bcbcbc;
-$buttonborder-darkblue: #025568;
 $title-blue: $services-blue;
 $link-blue:  $services-blue;
 $footer-grey: #a3afb2;
 $footerline-grey: #556270;
+
+//fonts
+
 $bree-serif-regular: "Bree Serif", serif;
 $ubuntu-regular: "Ubuntu", sans-serif;
 $ubuntu-condensed: 'Ubuntu Condensed', sans-serif;

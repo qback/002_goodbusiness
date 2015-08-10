@@ -1,15 +1,22 @@
-/*==========  Twitter block  ==========*/
+/*==========  Twitter-block styles ==========*/
+
 .twitter {
-  width: em(219);
   font-size: inherit;
+  width: em(219);
   text-align: left;
 }
+
 .post {
   @extend %single-post;
-}
-.post__link, .post__text, .post__time  {
-  @extend %single-line;
+  &:last-child {
+    border: none;
   }
+}
+
+.post__link, .post__text, .post__time {
+  @extend %single-line;
+}
+
 .post__time {
   display: block;
 }

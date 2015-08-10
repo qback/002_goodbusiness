@@ -1,7 +1,41 @@
 .newsletter {
-  width: em(245);
+  width: em(240);
 }
+
 .newsletter__last {
+  line-height: 1.83;
+  padding: em(10) 0 em(12);
+  border-bottom: 1px solid $footerline-grey;
   @extend %single-line;
-  @extend %single-post;
-} 
+}
+
+.subscription__label {
+  font-size: em(13);
+  line-height: percentage(20/13);
+  display: block;
+  margin: em(11, 13) 0;
+  color: $title-blue;
+}
+
+.subscription__input {
+  font-size: em(13);
+  line-height: percentage(28/13);
+  box-sizing: border-box;
+  width: 100%;
+  height: em(28, 13); //for IE
+  margin-bottom: em(15, 13);
+  padding: 0 em(10, 13);
+  color: black;
+  border: 0;
+  border-radius: em(3);
+}
+
+.subscription__button {
+  font-size: em(13);
+  line-height: percentage(28/13);
+  float: right;
+  padding: 0 em(16, 13);
+  color: white;
+  border-radius: em(2, 13);
+  background: $services-blue;
+}

@@ -4,8 +4,8 @@
 
 .services {
   position: relative;
-  background: $bg-grey;
   padding: percentage(50/1280) 0 percentage(34/1280);
+  background: $bg-grey;
 }
 
 .services__title {
@@ -13,19 +13,18 @@
   font-size: em(22);
   font-weight: normal;
   line-height: em(35, 22);
+  top: em(-17, 22);
   width: em(146, 22);
   height: em(35, 22);
+  margin: 0;
   text-align: center;
   color: white;
   border-radius: em(3, 22);
   background: $services-blue;
   @include scut-center-transform(x);
-  top: em(-17, 22);
-  margin: 0;
 }
 
 .service {
-  
   display: inline-block;
   box-sizing: border-box;
   width: percentage(175/920);
@@ -44,24 +43,22 @@
 .service__title {
   font-family: $bree-serif-regular;
   font-size: em(17);
-  margin-bottom: em(4,17);
   font-weight: normal;
+  margin-bottom: em(4, 17);
 }
 
 .service__text {
   font-size: em(11);
+  line-height: percentage(16/11);
   max-width: em(140, 11);
   margin: 0 auto;
-  line-height: percentage(16/11);
 }
+
 .service__link {
   font-family: $ubuntu-regular;
   font-weight: bold;
   color: $featurelink-blue;
 }
 
+
 /*-----  End of Promo Services section styles  ------*/
-
-
-
-
